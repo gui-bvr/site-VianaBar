@@ -7,7 +7,7 @@
 body,
 html {
     height: 100%;
-    font-family: 'Georgia', serif;
+    font-family: 'Rubik', serif;
 }
 
 .background {
@@ -32,12 +32,6 @@ html {
     z-index: 1;
 }
 
-.content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
 .logo {
     width: 250px;
     height: auto;
@@ -47,14 +41,16 @@ html {
 
 .text {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     padding: 0 20px;
+    min-height: 3.2rem;
+    white-space: nowrap;
 }
 
 @media (max-width: 600px) {
     .text {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .logo {
@@ -86,26 +82,4 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* Garante espaço para o texto completo antes de digitar */
-.text {
-    color: white;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    padding: 0 20px;
-    min-height: 3.2rem;
-    /* ou 2.5rem se for 1 linha, pode ajustar */
-    white-space: nowrap;
-}
-
-@media (max-width: 600px) {
-    .text {
-        font-size: 1.8rem;
-        min-height: 2.4rem;
-    }
-
-    .logo {
-        width: 180px;
-    }
 }

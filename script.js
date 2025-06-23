@@ -1,4 +1,4 @@
-const text = "Site em desenvolvimento";
+const text = "<Site em Desenvolvimento!>";
 const target = document.getElementById("typewriter");
 
 let index = 0;
